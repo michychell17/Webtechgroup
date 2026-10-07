@@ -21,7 +21,7 @@ header h1 {
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 10px;
 }
 
 nav a {
