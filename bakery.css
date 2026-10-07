@@ -4,3 +4,18 @@ body{
     background-repeat:no-repeat;
     color: white;
 }
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(249, 179, 250);
+}
