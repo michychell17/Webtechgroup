@@ -10,6 +10,7 @@ header {
     align-items: center;
     background-color: #f7b6c8;
     padding: 15px 40px;
+    border-radius: 15px;
 }
 
 .logo {
@@ -38,4 +39,35 @@ nav a {
 
 nav a:hover {
     color: white;
+}
+
+.intro {
+    background-color: #fde4ea;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 800px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.intro h2 {
+    color: #5c2118;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    color: #5c2118;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
 }
