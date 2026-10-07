@@ -81,14 +81,17 @@ nav a:hover {
     display: block;
 }
 
+/* the shaded box containing the introduction bakery item image and text */
 .intro {
     background-color: #fde4ea;
     border-radius: 20px;
-    margin: 20px;
-    padding: 30px;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 850px;
     text-align: center;
 }
 
+/* Intro bakery item image */
 .intro-image {
     width: 100%;
     max-width: 800px;
