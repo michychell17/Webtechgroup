@@ -4,6 +4,7 @@ body{
     background-repeat:no-repeat;
     color: white;
 }
+<<<<<<< Updated upstream
 
 header {
     display: flex;
@@ -70,4 +71,24 @@ nav a:hover {
     line-height: 1.5;
     max-width: 700px;
     margin: 0 auto;
+=======
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: pink);
+    min-width: 150px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+>>>>>>> Stashed changes
 }
