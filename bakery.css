@@ -27,7 +27,8 @@ header h1 {
 
 nav {
     display: flex;
-    gap: 40px;
+    align-items: center;
+    gap: 25px;
     margin-left: 100px;
 }
 
@@ -39,6 +40,45 @@ nav a {
 
 nav a:hover {
     color: white;
+}
+
+/* Holds each main link and its dropdown */
+.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown options until the user hovers */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: #fde4ea;
+    min-width: 180px;
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+/* Style each dropdown option */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    color: #5c2118;
+    white-space: nowrap;
+}
+
+/* Change color when hovering over an option */
+.dropdown-content a:hover {
+    background-color: #f7b6c8;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Show dropdown when hovering over a main item */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 .intro {
