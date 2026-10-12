@@ -114,3 +114,127 @@ nav a:hover {
     max-width: 700px;
     margin: 0 auto;
 }
+
+/* Holds all four dessert cards */
+.menu-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    margin: 30px auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+/* Basic design shared by all dessert cards */
+.dessert-card {
+    width: 230px;
+    min-height: 360px;
+    padding: 18px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+/* Different pastel color for each card */
+.cookies-card {
+    background-color: #f8d5c2;
+}
+
+.cupcakes-card {
+    background-color: #f5c6d6;
+}
+
+.cakes-card {
+    background-color: #d8d1f2;
+}
+
+.cakepops-card {
+    background-color: #cce8dc;
+}
+
+/* Area containing the image and arrows */
+.slideshow {
+    position: relative;
+    height: 275px;
+}
+
+/* Dessert images */
+.dessert-image {
+    display: none;
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Shows only the currently selected image */
+.dessert-image.active {
+    display: block;
+}
+
+/* Previous and next arrow buttons */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #5c2118;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.previous {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.arrow:hover {
+    background-color: white;
+}
+
+/* Dessert page buttons */
+.category-button {
+    display: block;
+    margin-top: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Darker button color matching each card */
+.cookies-button {
+    background-color: #c98261;
+}
+
+.cupcakes-button {
+    background-color: #c56f91;
+}
+
+.cakes-button {
+    background-color: #8172bd;
+}
+
+.cakepops-button {
+    background-color: #609c82;
+}
+
+.category-button:hover {
+    opacity: 0.8;
+}
+
+/* Allows cards to wrap on smaller screens */
+@media (max-width: 900px) {
+    .menu-cards {
+        flex-wrap: wrap;
+    }
+}
