@@ -5,6 +5,10 @@ body{
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -236,5 +240,110 @@ nav a:hover {
 @media (max-width: 900px) {
     .menu-cards {
         flex-wrap: wrap;
+    }
+}
+
+/* About Us section on the home page */
+.about-section {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fde4ea;
+    color: #5c2118;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.about-section h2 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+}
+
+.about-section p {
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Basic layout for separate information pages */
+.information-page {
+    padding: 40px 20px;
+}
+
+/* Contact information box */
+.contact-box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #fde4ea;
+    color: #5c2118;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.contact-box h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+}
+
+.contact-item {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.contact-item h3 {
+    margin-top: 0;
+}
+
+.contact-item a {
+    color: #a54d68;
+    font-weight: bold;
+}
+
+.contact-note {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+/* RECIPES PAGE */
+.recipes-page {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #5c2118;
+    text-align: center;
+}
+
+.recipes-page > h2 {
+    font-family: Georgia, serif;
+    font-size: 32px;
+}
+
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.recipe-card {
+    padding: 25px;
+    background-color: #fde4ea;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.recipe-card h3 {
+    margin-top: 0;
+}
+
+.recipe-card p {
+    line-height: 1.6;
+}
+
+@media (max-width: 650px) {
+    .recipe-grid {
+        grid-template-columns: 1fr;
     }
 }
