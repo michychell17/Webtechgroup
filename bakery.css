@@ -390,3 +390,76 @@ nav a:hover {
 .flavor-card:hover {
     transform: translateY(-5px);
 }
+
+/* CUSTOMIZE PAGE */
+.customize-page {
+    padding: 30px 20px;
+}
+
+.customize-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fde4ea;
+    border-radius: 20px;
+    color: #5c2118;
+}
+
+.customize-image {
+    width: 350px;
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.customize-form {
+    flex: 1;
+    min-width: 260px;
+}
+
+.customize-form h2 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+}
+
+.customize-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.customize-form select,
+.customize-form input[type="text"],
+.customize-form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #f7b6c8;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.customize-form .checkbox-row {
+    font-weight: normal;
+}
+
+.total {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#add-to-cart {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#confirm {
+    font-weight: bold;
+}

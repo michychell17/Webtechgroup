@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize - Sweetest Slice</title>
+    <link rel="stylesheet" href="bakery.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Sweetest Slice logo" class="logo">
+        <h1>Sweetest Slice</h1>
+
+        <nav>
+            <div class="dropdown">
+                <a href="bakery.html">Home</a>
+                <div class="dropdown-content">
+                    <a href="#">Welcome</a>
+                    <a href="#">Specials</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="about.html">About</a>
+                <div class="dropdown-content">
+                    <a href="#">Our Story</a>
+                    <a href="#">Our Bakers</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="contact.html">Contact</a>
+                <div class="dropdown-content">
+                    <a href="tel:5551234567">Phone: (555) 123-4567</a>
+                    <a href="mailto:sweetestslice@example.com">sweetestslice@example.com</a>
+                    <a href="#">Location</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="menu.html">Menu</a>
+                <div class="dropdown-content">
+                    <a href="cakes.html">Cakes</a>
+                    <a href="cupcakes.html">Cupcakes</a>
+                    <a href="cookies.html">Cookies</a>
+                    <a href="cakepops.html">Cake Pops</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <a href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                    <a href="#">Cake Recipes</a>
+                    <a href="#">Cookie Recipes</a>
+                    <a href="#">Baking Tips</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="customize-page">
+        <div class="customize-box">
+
+            <img id="item-image" class="customize-image" src="" alt="Your treat">
+
+            <div class="customize-form">
+                <h2 id="item-title">Customize Your Treat</h2>
+
+                <label for="size">Size</label>
+                <select id="size"></select>
+
+                <label for="color">Color theme</label>
+                <select id="color">
+                    <option>Pink</option>
+                    <option>White</option>
+                    <option>Purple</option>
+                    <option>Blue</option>
+                    <option>Mint</option>
+                </select>
+
+                <label for="message">Message (optional)</label>
+                <input type="text" id="message" maxlength="30" placeholder="Happy Birthday!">
+
+                <label class="checkbox-row">
+                    <input type="checkbox" id="sprinkles">
+                    Add sprinkles (+$2)
+                </label>
+
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" min="1" max="20" value="1">
+
+                <p class="total">Total: $<span id="price">0</span></p>
+
+                <button type="button" id="add-to-cart" class="category-button cakes-button">Add to Cart</button>
+                <p id="confirm"></p>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="customize.js"></script>
+</body>
+</html>
