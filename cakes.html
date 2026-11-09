@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cakes - Sweetest Slice</title>
+
+    <!-- Links the page to our CSS file so it gets the pink bakery styling -->
     <link rel="stylesheet" href="bakery.css">
+
+    <!-- NEW: Links the carousel JavaScript file. "defer" makes the browser
+         load the whole page first, then run the script, so the buttons exist
+         by the time the script looks for them -->
+    <script src="carousel.js" defer></script>
 </head>
 <body>
+    <!-- Header with the logo, bakery name, and navigation bar -->
     <header>
         <img src="logo.png" alt="Sweetest Slice logo" class="logo">
         <h1>Sweetest Slice</h1>
@@ -58,38 +66,56 @@
         </nav>
     </header>
 
+    <!-- Title box at the top of the page -->
     <section class="intro">
         <h2>Our Cakes</h2>
-        <p>Flavors coming soon!</p>
+        <p>Pick a flavor to customize!</p>
     </section>
 
-    <section class="flavor-grid">
+    <!-- NEW: The carousel wrapper. It holds the left arrow, the row of
+         cards, and the right arrow, and keeps them positioned together -->
+    <div class="carousel">
 
-        <a href="customize.html?type=cake&flavor=chocolate" class="flavor-card">
-            <img src="chocolate-cake.jpg" alt="Chocolate Cake">
-            <h3>Chocolate Cake</h3>
-            <p>Rich and moist chocolate cake with a creamy chocolate frosting.</p>
-    </a>
+        <!-- NEW: Left arrow button. The JS listens for clicks on this -->
+        <button class="carousel-arrow carousel-prev" type="button">‹</button>
 
-        <a href="customize.html?type=cake&flavor=vanilla" class="flavor-card">
-            <img src="vanilla-cake.jpg" alt="Vanilla Cake">
-            <h3>Vanilla Cake</h3>
-            <p>Classic vanilla cake with a light and fluffy texture, topped with vanilla buttercream.</p>
-    </a>
+        <!-- The row of flavor cards. In the carousel, CSS turns this into
+             one scrolling row instead of a wrapping grid -->
+        <section class="flavor-grid">
 
-        <a href="customize.html?type=cake&flavor=red-velvet" class="flavor-card">
-            <img src="red-velvet-cake.jpg" alt="Red Velvet Cake">
-            <h3>Red Velvet Cake</h3>
-            <p>A velvety red cake with a hint of cocoa, paired with cream cheese frosting.</p>
-    </a>
+            <!-- Each card is a link. Clicking it goes to customize.html and
+                 the part after the ? tells that page which treat was picked
+                 (type = category, flavor = which flavor) -->
+            <a href="customize.html?type=cake&flavor=chocolate" class="flavor-card">
+                <img src="chocolate-cake.jpg" alt="Chocolate Cake">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and moist chocolate cake with a creamy chocolate frosting.</p>
+            </a>
 
-        <a href="customize.html?type=cake&flavor=lemon" class="flavor-card">
-            <img src="lemon-cake.jpg" alt="Lemon Cake">
-            <h3>Lemon Cake</h3>
-            <p>A zesty lemon cake with a refreshing lemon glaze and light frosting.</p>
-    </a>
+            <a href="customize.html?type=cake&flavor=vanilla" class="flavor-card">
+                <img src="vanilla-cake.jpg" alt="Vanilla Cake">
+                <h3>Vanilla Cake</h3>
+                <p>Classic vanilla cake with a light and fluffy texture, topped with vanilla buttercream.</p>
+            </a>
 
-</section>
+            <a href="customize.html?type=cake&flavor=red-velvet" class="flavor-card">
+                <img src="red-velvet-cake.jpg" alt="Red Velvet Cake">
+                <h3>Red Velvet Cake</h3>
+                <p>A velvety red cake with a hint of cocoa, paired with cream cheese frosting.</p>
+            </a>
+
+            <a href="customize.html?type=cake&flavor=lemon" class="flavor-card">
+                <img src="lemon-cake.jpg" alt="Lemon Cake">
+                <h3>Lemon Cake</h3>
+                <p>A zesty lemon cake with a refreshing lemon glaze and light frosting.</p>
+            </a>
+
+        </section>
+
+        <!-- NEW: Right arrow button -->
+        <button class="carousel-arrow carousel-next" type="button">›</button>
+
+    </div>
 
 </body>
 </html>
