@@ -96,13 +96,17 @@ nav a:hover {
 }
 
 /* Intro bakery item image */
-.intro-image {
+
+.intro-video {
     width: 100%;
     max-width: 800px;
     height: 350px;
     object-fit: cover;
     border-radius: 15px;
+    display: block;
+    margin: 15px auto 0;
 }
+
 
 .intro h2 {
     color: #5c2118;
