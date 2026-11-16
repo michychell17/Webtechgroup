@@ -41,19 +41,25 @@ const bakeryEvents = {
     "2026-11-21": {
         title: "Holiday Dessert Pop-Up",
         location: "Downtown Community Market",
-        time: "10:00 a.m. – 3:00 p.m."
+        time: "10:00 a.m. – 3:00 p.m.",
+        image: "downtown-market.jpg",
+        imageAlt: "Downtown Community Market"
     },
 
     "2026-11-28": {
         title: "Small Business Saturday",
         location: "Sweetville Town Square",
-        time: "9:00 a.m. – 2:00 p.m."
+        time: "9:00 a.m. – 2:00 p.m.",
+        image: "town-square.jpg",
+        imageAlt: "Sweetville Town Square"
     },
 
     "2026-12-12": {
         title: "Winter Treat Market",
         location: "Sweetville Community Center",
-        time: "11:00 a.m. – 4:00 p.m."
+        time: "11:00 a.m. – 4:00 p.m.",
+        image: "community-center.jpg",
+        imageAlt: "Sweetville Community Center"
     }
 };
 
@@ -66,6 +72,7 @@ if (calendarDays) {
     const eventMessage = document.getElementById("event-message");
     const eventLocation = document.getElementById("event-location");
     const eventTime = document.getElementById("event-time");
+    const eventImage = document.getElementById("event-image");
 
     let displayedDate = new Date();
 
@@ -80,19 +87,28 @@ if (calendarDays) {
         const event = bakeryEvents[dateKey];
 
         if (event) {
-            eventTitle.textContent = event.title;
-            eventMessage.textContent = "Sweetest Slice will be at:";
-            eventLocation.textContent = "Location: " + event.location;
-            eventTime.textContent = "Time: " + event.time;
-        } else {
-            eventTitle.textContent = "No Events Scheduled";
-            eventMessage.textContent =
-                "We do not have a pop-up event scheduled for this day.";
+        eventTitle.textContent = event.title;
+        eventMessage.textContent = "Sweetest Slice will be at:";
 
-            eventLocation.textContent = "";
-            eventTime.textContent = "";
-        }
+        eventImage.src = event.image;
+        eventImage.alt = event.imageAlt;
+        eventImage.hidden = false;
+
+        eventLocation.textContent = "Location: " + event.location;
+        eventTime.textContent = "Time: " + event.time;
+    } else {
+        eventTitle.textContent = "No Events Scheduled";
+        eventMessage.textContent =
+            "We do not have a pop-up event scheduled for this day.";
+
+        eventImage.hidden = true;
+        eventImage.src = "";
+        eventImage.alt = "";
+
+        eventLocation.textContent = "";
+        eventTime.textContent = "";
     }
+}
 
     function displayCalendar() {
         calendarDays.innerHTML = "";
@@ -191,26 +207,4 @@ if (calendarDays) {
         showEvent(todayKey);
     });
     displayCalendar();
-} 
-
-function changeDessertPhoto(button, direction) {
-    const slider = button.closest(".dessert-photo-slider");
-
-    const photos = slider.dataset.photos
-        .split(",")
-        .map(photo => photo.trim())
-        .filter(Boolean);
-
-    if (!photos.length) return;
-
-    const image = slider.querySelector("img");
-
-    let currentIndex = Number(slider.dataset.index || 0);
-
-    currentIndex =
-        (currentIndex + direction + photos.length)
-        % photos.length;
-
-    image.src = photos[currentIndex];
-    slider.dataset.index = currentIndex;
 }

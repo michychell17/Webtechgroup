@@ -682,6 +682,19 @@ nav a:hover {
     font-size: 14px;
 }
 
+/* Photo of the pop-up event location */
+.event-image:not([hidden]) {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    height: 150px;
+    object-fit: cover;
+
+    margin: 20px auto;
+    border: 4px solid white;
+    border-radius: 12px;
+}
+
 .calendar-header #today-button:hover {
     background-color: #a94f69;
 }
@@ -918,112 +931,4 @@ nav a:hover {
     .seasonal-section .dessert-photo-slider img {
         height: 220px;
     }
-}
-
-/* VAMPIRE COLLECTION CAROUSEL */
-
-.seasonal-carousel {
-    position: relative;
-    width: 100%;
-    max-width: 1050px;
-    margin: 25px auto;
-    padding: 0 50px;
-    box-sizing: border-box;
-}
-
-.seasonal-carousel .seasonal-slide {
-    display: none;
-}
-
-.seasonal-carousel .seasonal-slide.active {
-    display: block;
-}
-
-.seasonal-carousel .flavor-collection {
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.collection-arrow {
-    position: absolute;
-    top: 90px;
-    transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background: #c76c91;
-    color: white;
-    border: none;
-    border-radius: 50%;
-    font-size: 22px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.collection-prev {
-    left: 0;
-}
-
-.collection-next {
-    right: 0;
-}
-
-.collection-arrow:hover {
-    background: #a95478;
-}
-
-@media (max-width: 600px) {
-    .seasonal-carousel {
-        padding: 0 35px;
-    }
-
-    .collection-arrow {
-        width: 30px;
-        height: 30px;
-        font-size: 17px;
-    }
-}
-
-/* FIX STACKING PHOTOS */
-
-.seasonal-section .dessert-photo-slider {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 450px;
-    height: 300px;
-    margin: 0 auto 20px;
-    overflow: hidden;
-    border-radius: 15px;
-}
-
-.seasonal-section .dessert-photo-slider img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    max-width: none;
-    object-fit: cover;
-    margin: 0;
-}
-
-.seasonal-section .dessert-photo-slider .photo-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: none;
-    background: white;
-    color: #68352f;
-    cursor: pointer;
-}
-
-.seasonal-section .dessert-photo-slider .left {
-    left: 10px;
-}
-
-.seasonal-section .dessert-photo-slider .right {
-    right: 10px;
 }
