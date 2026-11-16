@@ -249,13 +249,15 @@ nav a:hover {
 
 /* About Us section on the home page */
 .about-section {
-    max-width: 850px;
+    width: 80%;
+    max-width: 600px;
     margin: 40px auto;
-    padding: 30px;
+    padding: 35px;
     background-color: #fde4ea;
     color: #5c2118;
     border-radius: 18px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .about-section h2 {
