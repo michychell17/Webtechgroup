@@ -533,6 +533,7 @@ nav a:hover {
 .carousel-next {
     right: 0;
 }
+<<<<<<< Updated upstream
 /* POP-UP EVENTS CALENDAR */
 
 .events-section {
@@ -664,3 +665,240 @@ nav a:hover {
         border-radius: 0 0 18px 18px;
     }
 }
+=======
+
+
+/* Holiday / Seasonal Collection */
+
+.seasonal-section {
+  background-color: #ffbdcc;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.seasonal-section h1 {
+  color: #68352f;
+  font-family: Georgia, serif;
+}
+
+.flavor-collection {
+  max-width: 850px;
+  margin: 25px auto;
+  background: #ffe8ee;
+  border-radius: 22px;
+  padding: 30px;
+}
+
+.flavor-collection h2 {
+  color: #68352f;
+}
+
+.dessert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.dessert-card {
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.dessert-card:nth-child(4n + 1) {
+  background: #d9d2f3;
+}
+
+.dessert-card:nth-child(4n + 2) {
+  background: #f9cedd;
+}
+
+.dessert-card:nth-child(4n + 3) {
+  background: #ffd9c8;
+}
+
+.dessert-card:nth-child(4n + 4) {
+  background: #c5ebdd;
+}
+
+.dessert-card img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.dessert-card button {
+  background: #c76c91;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+
+.dessert-card button:hover {
+  background: #a95478;
+}
+
+/* FIX SEASONAL COLLECTION LAYOUT */
+
+.seasonal-section .flavor-collection {
+    width: 100%;
+    max-width: 950px;
+    margin: 25px auto;
+    box-sizing: border-box;
+}
+
+.seasonal-section .dessert-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+.seasonal-section .dessert-card {
+    width: 100%;
+    max-width: 750px;
+    min-height: 0;
+    height: auto;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seasonal-section .dessert-card img {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 260px;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    border-radius: 15px;
+}
+
+.seasonal-section .dessert-card h3 {
+    color: #68352f;
+    font-size: 24px;
+}
+
+.seasonal-section .dessert-card p {
+    color: #855450;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .seasonal-section .dessert-card {
+        padding: 20px;
+    }
+
+    .seasonal-section .dessert-card img {
+        height: 200px;
+    }
+}
+
+/* Vampire Cake Photo Slider */
+
+.cake-photo-slider {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 20px;
+}
+
+.cake-photo-slider img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.cake-photo-slider .photo-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #68352f;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.cake-photo-slider .left {
+    left: 10px;
+}
+
+.cake-photo-slider .right {
+    right: 10px;
+}
+
+.cake-photo-slider .photo-arrow:hover {
+    background: #c76c91;
+    color: white;
+}
+
+/* PHOTO SLIDERS FOR ALL DESSERTS */
+
+.dessert-photo-slider {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto 20px;
+}
+
+.seasonal-section .dessert-photo-slider img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.dessert-photo-slider .photo-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #68352f;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dessert-photo-slider .left {
+    left: 10px;
+}
+
+.dessert-photo-slider .right {
+    right: 10px;
+}
+
+.dessert-photo-slider .photo-arrow:hover {
+    background: #c76c91;
+    color: rgb(255, 0, 0);
+}
+
+@media (max-width: 600px) {
+    .seasonal-section .dessert-photo-slider img {
+        height: 220px;
+    }
+}
+>>>>>>> Stashed changes
