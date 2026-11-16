@@ -125,6 +125,7 @@ if (calendarDays) {
 
             dateButton.type = "button";
             dateButton.textContent = day;
+            dateButton.dataset.date = dateKey;
 
             if (bakeryEvents[dateKey]) {
                 dateButton.classList.add("has-event");
@@ -160,5 +161,34 @@ if (calendarDays) {
             displayCalendar();
         });
 
+    document
+    .getElementById("today-button")
+    .addEventListener("click", function () {
+        const today = new Date();
+
+        displayedDate = new Date(
+            today.getFullYear(),
+            today.getMonth(),
+            1
+        );
+
+        displayCalendar();
+
+        const todayKey = createDateKey(
+            today.getFullYear(),
+            today.getMonth(),
+            today.getDate()
+        );
+
+        const todayButton = calendarDays.querySelector(
+            `[data-date="${todayKey}"]`
+        );
+
+        if (todayButton) {
+            todayButton.classList.add("selected-date");
+        }
+
+        showEvent(todayKey);
+    });
     displayCalendar();
 }
