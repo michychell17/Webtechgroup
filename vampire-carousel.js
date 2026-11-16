@@ -1,18 +1,22 @@
 
-let currentCollection = 0;
+function changeDessertPhoto(button, direction) {
+    const slider = button.closest(".dessert-photo-slider");
 
-function changeCollection(direction) {
-    const slides = document.querySelectorAll(
-        ".seasonal-carousel .seasonal-slide"
-    );
+    const photos = slider.dataset.photos
+        .split(",")
+        .map(photo => photo.trim())
+        .filter(Boolean);
 
-    if (slides.length === 0) return;
+    if (!photos.length) return;
 
-    slides[currentCollection].classList.remove("active");
+    const image = slider.querySelector("img");
 
-    currentCollection =
-        (currentCollection + direction + slides.length)
-        % slides.length;
+    let currentIndex = Number(slider.dataset.index || 0);
 
-    slides[currentCollection].classList.add("active");
+    currentIndex =
+        (currentIndex + direction + photos.length)
+        % photos.length;
+
+    image.src = photos[currentIndex];
+    slider.dataset.index = currentIndex;
 }
