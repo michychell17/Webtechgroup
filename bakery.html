@@ -255,46 +255,94 @@
 
 
 <section class="seasonal-section">
-  <h1>Holiday / Seasonal</h1>
+ 
 
-  <div class="flavor-collection">
+ 
+<div class="seasonal-carousel">
+
+  <button type="button"
+          class="collection-arrow collection-prev"
+          onclick="changeCollection(-1)"
+          aria-label="Previous seasonal collection">
+    &#10094;
+  </button>
+
+  <div class="seasonal-slide active">
+    <div class="flavor-collection">
+
+      <h2>Vampire Collection</h2>
+      <p>Featuring raspberry puree</p>
+
+      <div class="dessert-list">
+
+        <!-- KEEP ALL YOUR EXISTING VAMPIRE
+             CAKE, CUPCAKE, CAKE POP,
+             AND COOKIE CARDS HERE -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="seasonal-slide">
+    <div class="flavor-collection">
+      <h2>Next Seasonal Collection</h2>
+      <p>More seasonal treats coming soon!</p>
+    </div>
+  </div>
+ 
+  <button type="button"
+          class="collection-arrow collection-next"
+          onclick="changeCollection(1)"
+          aria-label="Next seasonal collection">
+    &#10095;
+  </button>
+
+</div>
+
     <h2>Vampire Collection</h2>
     <p>Featuring raspberry puree</p>
 
     <div class="dessert-list">
 
-      <!-- VAMPIRE CAKE -->
-      <div class="dessert-card">
-        <div class="dessert-photo-slider"
-             data-photos="vampire-cake.png,vampire-cake2.jpg,vampire-cake3.jpg">
+      
+<!-- VAMPIRE CAKE -->
+<div class="dessert-card">
 
-          <button type="button"
-                  class="photo-arrow left"
-                  onclick="changeDessertPhoto(this, -1)"
-                  aria-label="Previous cake photo">
+    <div class="dessert-photo-slider"
+        
+ data-photos="vampire-cake.png,vampire-age.jpg,vampire-twilight.jpg ">
+        <button type="button"
+                class="photo-arrow left"
+                onclick="changeDessertPhoto(this, -1)">
             &#10094;
-          </button>
+        </button>
 
-          <img src="vampire-cake.png"
-               alt="Vampire Cake">
+        <img src="vampire-cake.png"
+             alt="Vampire Cake"
+             class= "dessert-image active">
 
-          <button type="button"
-                  class="photo-arrow right"
-                  onclick="changeDessertPhoto(this, 1)"
-                  aria-label="Next cake photo">
+        <img src="vampire-age.jpg"
+             alt="Vampire age Cake"
+             class= "dessert-image active">
+             
+        <button type="button"
+                class="photo-arrow right"
+                onclick="changeDessertPhoto(this, 1)">
             &#10095;
-          </button>
-        </div>
+        </button>
 
-        <h3>Vampire Cake</h3>
-        <p>Chocolate cake with raspberry filling.</p>
-        <button type="button">Add to Cart</button>
-      </div>
+    </div>
+
+    <h3>Vampire Cakes</h3>
+    <p>Chocolate cake with raspberry filling.</p>
+    <button type="button">Add to Cart</button>
+
+</div>
 
       <!-- VAMPIRE CUPCAKE -->
       <div class="dessert-card">
         <div class="dessert-photo-slider"
-             data-photos="vampire-cupcake.jpg,vampire-cupcake2.jpg,vampire-cupcake3.jpg">
+             data-photos="witch cupcake.jpg, purple-witch.jpg, eye-cupcake.jpg">
 
           <button type="button"
                   class="photo-arrow left"
@@ -314,14 +362,14 @@
           </button>
         </div>
 
-        <h3>Vampire Cupcake</h3>
+        <h3>Witch Cupcakes</h3>
         <button type="button">Add to Cart</button>
       </div>
 
       <!-- VAMPIRE CAKE POP -->
       <div class="dessert-card">
         <div class="dessert-photo-slider"
-             data-photos="vampire-cakepop.jpg,vampire-cakepop2.jpg,vampire-cakepop3.jpg">
+             data-photos="spooky-cakepops.jpg, ghost-cakepops.png, jack-cakepops.jpg">
 
           <button type="button"
                   class="photo-arrow left"
@@ -341,14 +389,14 @@
           </button>
         </div>
 
-        <h3>Vampire Cake Pop</h3>
+        <h3>Ghost Cakepops</h3>
         <button type="button">Add to Cart</button>
       </div>
 
       <!-- VAMPIRE COOKIE -->
       <div class="dessert-card">
         <div class="dessert-photo-slider"
-             data-photos="vampire-cookie.jpg,vampire-cookie2.jpg,vampire-cookie3.jpg">
+             data-photos="vampire-cookie.jpg,halloween-cookies.jpg,boo-cookies.jpg">
 
           <button type="button"
                   class="photo-arrow left"
@@ -368,7 +416,7 @@
           </button>
         </div>
 
-        <h3>Vampire Cookie</h3>
+        <h3> Spooky Cookies</h3>
         <button type="button">Add to Cart</button>
       </div>
 
