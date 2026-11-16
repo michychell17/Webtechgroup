@@ -533,3 +533,134 @@ nav a:hover {
 .carousel-next {
     right: 0;
 }
+/* POP-UP EVENTS CALENDAR */
+
+.events-section {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: stretch;
+
+    width: 90%;
+    max-width: 1000px;
+    min-height: 460px;
+    margin: 45px auto;
+}
+
+/* Event flyer on the left side */
+.event-flyer {
+    background-color: #c96f88;
+    color: white;
+    padding: 35px 25px;
+    border-radius: 18px 0 0 18px;
+    text-align: center;
+}
+
+.event-flyer h2 {
+    font-family: Georgia, serif;
+    margin-top: 0;
+}
+
+.event-flyer p {
+    line-height: 1.6;
+}
+
+#event-details {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* Calendar on the right side */
+.calendar {
+    background-color: #fde4ea;
+    color: #5c2118;
+    padding: 25px;
+    border-radius: 0 18px 18px 0;
+}
+
+/* Month name and arrow buttons */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header h2 {
+    font-family: Georgia, serif;
+    margin: 0;
+}
+
+.calendar-header button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f7b6c8;
+    color: #5c2118;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background-color: #c96f88;
+    color: white;
+}
+
+/* Weekday names and calendar dates */
+.calendar-weekdays,
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 7px;
+}
+
+.calendar-weekdays {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.calendar-days button {
+    min-height: 55px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #5c2118;
+    cursor: pointer;
+}
+
+.calendar-days button:hover {
+    background-color: #f7b6c8;
+}
+
+/* Dates that have an event */
+.calendar-days .has-event {
+    background-color: #d899aa;
+    color: white;
+    font-weight: bold;
+}
+
+/* Date currently selected */
+.calendar-days .selected-date {
+    outline: 3px solid #8f3f58;
+}
+
+/* Empty spaces before the first day of the month */
+.empty-day {
+    min-height: 55px;
+}
+
+/* Stack calendar and flyer on smaller screens */
+@media (max-width: 750px) {
+    .events-section {
+        grid-template-columns: 1fr;
+    }
+
+    .event-flyer {
+        border-radius: 18px 18px 0 0;
+    }
+
+    .calendar {
+        border-radius: 0 0 18px 18px;
+    }
+}
