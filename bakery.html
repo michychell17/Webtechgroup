@@ -393,9 +393,7 @@
 <!-- CHRISTMAS SECTION -->
 <section id="christmas" class="seasonal-section">
     <div class="container"
-
-    <h2>Christmas Collection</h2>
-    <p>Celebrate the holidays with our festive sweet treats!</p>
+ <h2>Christmas Collection</h2>
 
     <div class="dessert-list">
 
@@ -422,8 +420,8 @@
           </button>
         </div>
 
-        <h3>Christmas Cake</h3>
-        <p>Festive cakes decorated for the holiday season.</p>
+        <h3>Christmas Cakes</h3>
+    
         <button type="button">Add to Cart</button>
       </div>
 
@@ -434,7 +432,6 @@
 
           <button type="button"
                   class="photo-arrow left"
-                  onclick="grinch-cupcakes.jpg"
                   aria-label="Previous cupcake photo">
             &#10094;
           </button>
@@ -444,21 +441,20 @@
 
           <button type="button"
                   class="photo-arrow right"
-                  onclick="changeDessertPhoto(this, 1)"
+                  onclick="changeDessertPhoto(this, -1)"
                   aria-label="Next cupcake photo">
             &#10095;
           </button>
         </div>
 
         <h3>Christmas Cupcakes</h3>
-        <p>Holiday cupcakes with festive frosting.</p>
         <button type="button">Add to Cart</button>
       </div>
 
       <!-- CHRISTMAS CAKE POPS -->
       <div class="dessert-card">
         <div class="dessert-photo-slider"
-             data-photos="grinch-cakepops.jpg,christmas-cakepops.jpg,snowman-cakepops.jpg,">
+             data-photos="grinch-cakepops.jpg,snowman-cakepops.jpg,christmas-cakepops.jpg">
 
           <button type="button"
                   class="photo-arrow left"
@@ -512,5 +508,140 @@
       </div>
 
     </div>
+
+<!-- VALENTINE'S DAY SECTION -->
+<section id="valentines" class="seasonal-section">
+
+  <div class="container">
+
+    <h1>Valentine's Day Collection</h1>
+
+    <div class="flavor-collection">
+
+      <h2>Sweet Treats Made with Love</h2>
+
+
+      <div class="dessert-list">
+
+        <!-- VALENTINE CAKE -->
+        <div class="dessert-card">
+          <div class="dessert-photo-slider"
+               data-photos="charlie-brown-cake.jpg,snoopy-v-day.jpg,bear-valentine-day.jpg">
+
+            <button type="button"
+                    class="photo-arrow left"
+                    onclick="changeDessertPhoto(this, -1)"
+                    aria-label="Previous cake photo">
+              &#10094;
+            </button>
+
+            <img src="charlie-brown-cake.jpg"
+                 alt="Valentine Heart Cake">
+
+            <button type="button"
+                    class="photo-arrow right"
+                    onclick="changeDessertPhoto(this, 1)"
+                    aria-label="Next cake photo">
+              &#10095;
+            </button>
+
+          </div>
+
+          <h3>Heart Cakes</h3>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- VALENTINE CUPCAKES -->
+        <div class="dessert-card">
+          <div class="dessert-photo-slider"
+               data-photos="valentine-cupcake.jpg,heart-cupcake.jpg,rose-cupcake.jpg">
+
+            <button type="button"
+                    class="photo-arrow left"
+                    onclick="changeDessertPhoto(this, -1)"
+                    aria-label="Previous cupcake photo">
+              &#10094;
+            </button>
+
+            <img src="valentine-cupcake.jpg"
+                 alt="Valentine Cupcakes">
+
+            <button type="button"
+                    class="photo-arrow right"
+                    onclick="changeDessertPhoto(this, 1)"
+                    aria-label="Next cupcake photo">
+              &#10095;
+            </button>
+
+          </div>
+
+          <h3>Love Cupcakes</h3>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- VALENTINE CAKE POPS -->
+        <div class="dessert-card">
+          <div class="dessert-photo-slider"
+               data-photos="v-day-cakepops.jpg,valentine-cakepops.jpg">
+
+            <button type="button"
+                    class="photo-arrow left"
+                    onclick="changeDessertPhoto(this, -1)"
+                    aria-label="Previous cake pop photo">
+              &#10094;
+            </button>
+
+            <img src="v-day-cakepops.jpg"
+                 alt="Valentine Cake Pops">
+
+            <button type="button"
+                    class="photo-arrow right"
+                    onclick="changeDessertPhoto(this, 1)"
+                    aria-label="Next cake pop photo">
+              &#10095;
+            </button>
+
+          </div>
+
+          <h3>Valentine Cake Pops</h3>
+          <button type="button">Add to Cart</button>
+        </div>
+
+        <!-- VALENTINE COOKIES -->
+        <div class="dessert-card">
+          <div class="dessert-photo-slider"
+               data-photos="valentine-cookies.jpg,heart-cookies.jpg,love-letter-cookies.jpg">
+
+            <button type="button"
+                    class="photo-arrow left"
+                    onclick="changeDessertPhoto(this, -1)"
+                    aria-label="Previous cookie photo">
+              &#10094;
+            </button>
+
+            <img src="valentine-cookies.jpg"
+                 alt="Valentine Cookies">
+
+            <button type="button"
+                    class="photo-arrow right"
+                    onclick="changeDessertPhoto(this, 1)"
+                    aria-label="Next cookie photo">
+              &#10095;
+            </button>
+
+          </div>
+
+          <h3>Sweetheart Cookies</h3>
+          <button type="button">Add to Cart</button>
+        </div>
+
+      </div> 
+
+    </div> 
+
+  </div> 
+
+</section>
+
   </div>
 </section>
