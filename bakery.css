@@ -32,7 +32,7 @@ header h1 {
 nav {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
     margin-left: 100px;
 }
 
@@ -40,6 +40,11 @@ nav a {
     color: #5c2118;
     font-weight: bold;
     text-decoration: none;
+}
+
+nav > a,
+.dropdown > a {
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -71,6 +76,7 @@ nav a:hover {
     padding: 10px;
     color: #5c2118;
     white-space: nowrap;
+    font-size: 17px;
 }
 
 /* Change color when hovering over an option */
@@ -687,9 +693,7 @@ nav a:hover {
     display: block;
     width: 100%;
     max-width: 240px;
-    height: 150px;
-    object-fit: cover;
-
+    height: auto;
     margin: 20px auto;
     border: 4px solid white;
     border-radius: 12px;
@@ -933,6 +937,7 @@ nav a:hover {
     }
 }
 
+<<<<<<< HEAD
 
 /* PHOTO SLIDERS FOR ALL DESSERTS */
 
@@ -990,3 +995,40 @@ nav a:hover {
         height: 220px;
     }
 }
+=======
+/* Fixes the "Featuring raspberry puree" line (was white on light pink) */
+.flavor-collection > p {
+    color: #5c2118;
+}
+
+/*  Text size buttons (A, A+, A++) */
+.text-size-controls {
+    display: flex;
+    gap: 6px;
+    margin-left: auto; /* pushes the buttons to the right side of the header */
+}
+
+.text-size-controls button {
+    min-width: 44px;
+    min-height: 44px;
+    font: inherit;
+    font-weight: bold;
+    background-color: #fde4ea;
+    color: #5c2118;
+    border: 2px solid #5c2118;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* The button for the size that is currently on */
+.text-size-controls button[aria-pressed="true"] {
+    background-color: #5c2118;
+    color: white;
+}
+
+/* Outline so keyboard users can see which button they're on */
+.text-size-controls button:focus-visible {
+    outline: 3px solid #5c2118;
+    outline-offset: 3px;
+}
+>>>>>>> 13fa27188bd832db3cecdd26b5c741e32b92b021

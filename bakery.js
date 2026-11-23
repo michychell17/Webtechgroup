@@ -42,7 +42,7 @@ const bakeryEvents = {
         title: "Holiday Dessert Pop-Up",
         location: "Downtown Community Market",
         time: "10:00 a.m. – 3:00 p.m.",
-        image: "downtown-market.jpg",
+        image: "downtown community market.png",
         imageAlt: "Downtown Community Market"
     },
 
@@ -50,7 +50,7 @@ const bakeryEvents = {
         title: "Small Business Saturday",
         location: "Sweetville Town Square",
         time: "9:00 a.m. – 2:00 p.m.",
-        image: "town-square.jpg",
+        image: "town-square.png",
         imageAlt: "Sweetville Town Square"
     },
 
@@ -58,8 +58,24 @@ const bakeryEvents = {
         title: "Winter Treat Market",
         location: "Sweetville Community Center",
         time: "11:00 a.m. – 4:00 p.m.",
-        image: "community-center.jpg",
+        image: "community-center.png",
         imageAlt: "Sweetville Community Center"
+    },
+
+    "2027-02-14": {
+        title: "Valentine's Day Special",
+        location: "Sweetville Bakery",
+        time: "9:00 a.m. – 6:00 p.m.",
+        image: "valentine-special.png",
+        imageAlt: "Sweetville Bakery"
+    },
+
+    "2027-05-09": {
+        title: "Mother's Day Treats",
+        location: "Downtown Sweetville",
+        time: "10:00 a.m. – 3:00 p.m.",
+        image: "mothers-day.png",
+        imageAlt: "Sweetville Bakery"
     }
 };
 
