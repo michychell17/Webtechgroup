@@ -60,6 +60,22 @@ const bakeryEvents = {
         time: "11:00 a.m. – 4:00 p.m.",
         image: "community-center.png",
         imageAlt: "Sweetville Community Center"
+    },
+
+    "2027-02-14": {
+        title: "Valentine's Day Special",
+        location: "Sweetville Bakery",
+        time: "9:00 a.m. – 6:00 p.m.",
+        image: "valentine-special.png",
+        imageAlt: "Sweetville Bakery"
+    },
+
+    "2027-05-09": {
+        title: "Mother's Day Treats",
+        location: "Downtown Sweetville",
+        time: "10:00 a.m. – 3:00 p.m.",
+        image: "mothers-day.png",
+        imageAlt: "Sweetville Bakery"
     }
 };
 
