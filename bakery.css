@@ -932,3 +932,39 @@ nav a:hover {
         height: 220px;
     }
 }
+
+/* Fixes the "Featuring raspberry puree" line (was white on light pink) */
+.flavor-collection > p {
+    color: #5c2118;
+}
+
+/*  Text size buttons (A, A+, A++) */
+.text-size-controls {
+    display: flex;
+    gap: 6px;
+    margin-left: auto; /* pushes the buttons to the right side of the header */
+}
+
+.text-size-controls button {
+    min-width: 44px;
+    min-height: 44px;
+    font: inherit;
+    font-weight: bold;
+    background-color: #fde4ea;
+    color: #5c2118;
+    border: 2px solid #5c2118;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* The button for the size that is currently on */
+.text-size-controls button[aria-pressed="true"] {
+    background-color: #5c2118;
+    color: white;
+}
+
+/* Outline so keyboard users can see which button they're on */
+.text-size-controls button:focus-visible {
+    outline: 3px solid #5c2118;
+    outline-offset: 3px;
+}
