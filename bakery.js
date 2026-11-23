@@ -42,7 +42,7 @@ const bakeryEvents = {
         title: "Holiday Dessert Pop-Up",
         location: "Downtown Community Market",
         time: "10:00 a.m. – 3:00 p.m.",
-        image: "downtown-market.jpg",
+        image: "downtown community market.png",
         imageAlt: "Downtown Community Market"
     },
 
